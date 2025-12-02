@@ -6,7 +6,6 @@ gemspec
 # Development and testing dependencies
 group :development, :test do
   gem 'rake', '~> 13.0'
-  gem 'bundler', '~> 2.0'
   gem 'minitest', '~> 5.16'
   gem 'minitest-reporters', '~> 1.5'
   gem 'simplecov', '~> 0.22', require: false

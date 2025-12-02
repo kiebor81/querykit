@@ -31,7 +31,6 @@ PLATFORMS
   x64-mingw-ucrt
 
 DEPENDENCIES
-  bundler (~> 2.0)
   minitest (~> 5.16)
   minitest-reporters (~> 1.5)
   quby!
