@@ -148,6 +148,7 @@ db.raw('SELECT *, AVG(salary) OVER (PARTITION BY department) as dept_avg FROM em
 
 # Upsert (SQLite)
 db.raw('INSERT INTO users (id, name) VALUES (?, ?) ON CONFLICT(id) DO UPDATE SET name=excluded.name', id, name)
+```
 
 ## License
 
