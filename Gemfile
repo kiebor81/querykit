@@ -1,6 +1,5 @@
 source 'https://rubygems.org'
 
-# Specify your gem's dependencies in quby.gemspec
 gemspec
 
 # Development and testing dependencies
@@ -11,7 +10,6 @@ group :development, :test do
   gem 'simplecov', '~> 0.22', require: false
 end
 
-# Optional database adapters (install only what you need)
 group :development do
   gem 'sqlite3', '~> 1.6'
   # gem 'pg', '~> 1.5'        # Uncomment for PostgreSQL

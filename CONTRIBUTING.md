@@ -92,7 +92,6 @@ Open an issue to discuss before implementing large features.
 4. **Update documentation**
    - Update relevant docs in `docs/`
    - Add examples if appropriate
-   - Update CHANGELOG.md
 
 5. **Run the test suite**
    ```bash
