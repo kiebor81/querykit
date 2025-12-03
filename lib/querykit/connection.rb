@@ -7,7 +7,7 @@ module QueryKit
   # and optionally mapping results to model objects.
   #
   # @example Basic usage
-  #   db = Quby.connect(:sqlite, database: 'app.db')
+  #   db = QueryKit.connect(:sqlite, database: 'app.db')
   #   query = db.query('users').where('age', '>', 18)
   #   users = db.get(query)
   #
@@ -28,8 +28,8 @@ module QueryKit
     # @param adapter [Adapter] a database adapter instance (SQLite, PostgreSQL, or MySQL)
     #
     # @example
-    #   adapter = Quby::Adapters::SQLiteAdapter.new(database: 'app.db')
-    #   connection = Quby::Connection.new(adapter)
+    #   adapter = QueryKit::Adapters::SQLiteAdapter.new(database: 'app.db')
+    #   connection = QueryKit::Connection.new(adapter)
     def initialize(adapter)
       @adapter = adapter
     end

@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
-require_relative '../lib/quby'
+require_relative '../lib/querykit'
 
 puts "=" * 70
-puts "QUBY - Query Builder Demo"
+puts "QueryKit - Query Builder Demo"
 puts "=" * 70
 puts
 
@@ -172,7 +172,7 @@ db.transaction do
     db.insert('posts').values(
       user_id: user_id,
       title: 'My First Post',
-      content: 'Hello, Quby!',
+      content: 'Hello, QueryKit!',
       created_at: Time.now.to_s
     )
   )

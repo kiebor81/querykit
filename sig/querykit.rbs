@@ -1,17 +1,17 @@
-# Primary module for Quby query builder
+# Primary module for QueryKit query builder
 module QueryKit
   VERSION: String
 
   # Factory method for creating database connections
   def self.connect: (Symbol adapter_type, (Hash[Symbol, untyped] | String) config) -> Connection
 
-  # Load extensions into Quby
+  # Load extensions into QueryKit
   def self.use_extensions: (*Module extensions) -> void
 
   # Get the global configuration instance
   def self.configuration: () -> Configuration
 
-  # Configure Quby globally
+  # Configure QueryKit globally
   def self.configure: () { (Configuration) -> void } -> void
 
   # Setup with parameters

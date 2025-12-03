@@ -177,7 +177,7 @@ end
 
 ## Architecture
 
-Quby uses clean separation of concerns:
+QueryKit uses clean separation of concerns:
 
 - **Query builders** - Build SQL with fluent API (SELECT, INSERT, UPDATE, DELETE)
 - **Adapters** - Database-specific implementations (SQLite, PostgreSQL, MySQL)
@@ -193,7 +193,7 @@ All query builders are lazy - they only build SQL strings. Execute with:
 - `db.execute_delete(query)` - Returns affected_rows
 - `db.raw(sql, *bindings)` - Execute raw SQL
 
-## What Quby Does NOT Do
+## What QueryKit Does NOT Do
 
 Intentionally excluded features:
 
@@ -204,4 +204,4 @@ Intentionally excluded features:
 - **No schema introspection** - You define your models
 - **No automatic timestamps** - Set them manually if needed
 
-This is by design. Quby is a query builder, not a full ORM.
+This is by design. QueryKit is a query builder, not a full ORM.

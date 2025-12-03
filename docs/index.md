@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Quby Documentation
+title: QueryKit Documentation
 ---
 
-# Quby Documentation
+# QueryKit Documentation
 
 A lightweight, fluent query builder and micro-ORM for Ruby, inspired by .NET's SqlKata and Dapper.
 
@@ -52,7 +52,7 @@ users = repo.where('age', '>', 18)
 ## Installation
 
 ```bash
-gem install quby
+gem install QueryKit
 
 # Then install your database driver:
 gem install sqlite3    # For SQLite
@@ -75,7 +75,7 @@ gem install mysql2     # For MySQL
 
 - [CASE WHEN Extension](extensions/case-when.html) - Optional fluent CASE expressions
 
-## Why Quby?
+## Why QueryKit?
 
 **vs Active Record:** Much lighter, no DSL, no magic. Just build queries and execute them.
 
@@ -101,10 +101,10 @@ This project adheres to the [Contributor Covenant Code of Conduct](../CODE_OF_CO
 
 ## License
 
-Quby is released under the [MIT License](https://github.com/kiebor81/quby/blob/main/LICENSE).
+QueryKit is released under the [MIT License](https://github.com/kiebor81/QueryKit/blob/main/LICENSE).
 
 ## Links
 
-- [GitHub Repository](https://github.com/kiebor81/quby)
-- [Issue Tracker](https://github.com/kiebor81/quby/issues)
-- [Changelog](https://github.com/kiebor81/quby/blob/main/CHANGELOG.md)
+- [GitHub Repository](https://github.com/kiebor81/QueryKit)
+- [Issue Tracker](https://github.com/kiebor81/QueryKit/issues)
+- [Changelog](https://github.com/kiebor81/QueryKit/blob/main/CHANGELOG.md)

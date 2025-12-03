@@ -3,7 +3,7 @@
 ## Global Configuration
 
 ### `QueryKit.configure { |config| ... }`
-Configure Quby with a block.
+Configure QueryKit with a block.
 
 ```ruby
 QueryKit.configure do |config|

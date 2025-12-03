@@ -2,7 +2,7 @@
 
 ## Overview
 
-Quby provides thread-safe global configuration, but **database connections should not be shared across threads** in most cases. This guide explains how to safely use Quby in concurrent environments.
+QueryKit provides thread-safe global configuration, but **database connections should not be shared across threads** in most cases. This guide explains how to safely use QueryKit in concurrent environments.
 
 ## Global Connection (`QueryKit.connection`)
 
@@ -143,7 +143,7 @@ end
 Or use a global connection (safe for Rails since each request has its own thread/process):
 
 ```ruby
-# config/initializers/quby.rb
+# config/initializers/QueryKit.rb
 QueryKit.setup(:postgresql,
   host: ENV['DB_HOST'],
   database: ENV['DB_NAME'],

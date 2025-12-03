@@ -2,7 +2,7 @@
 
 ## SQL Injection Protection
 
-Quby uses **parameterized queries** by default, which protects against SQL injection when used correctly. However, like any query builder, it's possible to introduce vulnerabilities through misuse.
+QueryKit uses **parameterized queries** by default, which protects against SQL injection when used correctly. However, like any query builder, it's possible to introduce vulnerabilities through misuse.
 
 ## Safe Practices (Parameterized)
 
@@ -282,7 +282,7 @@ Consider using:
 
 ## Summary
 
-**Quby is secure by default** when you use the query builder methods. The main risks are:
+**QueryKit is secure by default** when you use the query builder methods. The main risks are:
 
 1. Using `raw()` or `where_raw()` with string interpolation
 2. Accepting user input for column/table names without whitelisting

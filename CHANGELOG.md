@@ -3,7 +3,7 @@
 ## [0.1.0]
 
 ### Added
-- Initial release of Quby
+- Initial release of QueryKit
 - Fluent query builder for SELECT, INSERT, UPDATE, DELETE
 - WHERE conditions with operators: =, >, <, >=, <=, !=, LIKE
 - WHERE variants: where_in, where_not_in, where_null, where_not_null, where_between, where_raw

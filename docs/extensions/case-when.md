@@ -1,6 +1,6 @@
 # CASE WHEN Extension
 
-An optional extension that adds fluent CASE WHEN support to Quby queries.
+An optional extension that adds fluent CASE WHEN support to QueryKit queries.
 
 ## Installation
 
@@ -8,7 +8,7 @@ The extension is **opt-in**. Enable it using the plugin system:
 
 ```ruby
 require 'querykit'
-require 'quby/extensions/case_when'
+require 'QueryKit/extensions/case_when'
 
 # Enable the extension
 QueryKit.use_extensions(QueryKit::CaseWhenExtension)
@@ -194,7 +194,7 @@ The CASE WHEN extension is optional because:
 
 1. **Not everyone needs it** - Most queries don't require CASE expressions
 2. **Raw SQL works fine** - You can always use `raw()` for CASE statements
-3. **Keep core simple** - Quby's philosophy is minimal by default
+3. **Keep core simple** - QueryKit's philosophy is minimal by default
 4. **Method override** - The extension uses `prepend` to override `select()`
 
 ## Without the Extension

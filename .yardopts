@@ -5,6 +5,6 @@
 --private
 --readme README.md
 --files CHANGELOG.md,LICENSE,CONTRIBUTING.md,CODE_OF_CONDUCT.md
---title "Quby Documentation"
+--title "QueryKit Documentation"
 --no-stats
 lib/**/*.rb

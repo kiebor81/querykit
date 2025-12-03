@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
-require_relative '../lib/quby'
-require_relative '../lib/quby/extensions/case_when'
+require_relative '../lib/QueryKit'
+require_relative '../lib/QueryKit/extensions/case_when'
 
 # Enable the CASE WHEN extension using the plugin system
 QueryKit.use_extensions(QueryKit::CaseWhenExtension)

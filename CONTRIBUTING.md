@@ -1,10 +1,10 @@
-# Contributing to Quby
+# Contributing to QueryKit
 
-Thanks for your interest in contributing to Quby. This guide will help you get started.
+Thanks for your interest in contributing to QueryKit. This guide will help you get started.
 
 ## Philosophy
 
-Quby is intentionally **minimal and focused**. Before contributing, please understand our design principles:
+QueryKit is intentionally **minimal and focused**. Before contributing, please understand our design principles:
 
 - **Minimal dependencies** - Only database drivers required
 - **Opt-in features** - Core stays lean, extensions are optional
@@ -16,8 +16,8 @@ Quby is intentionally **minimal and focused**. Before contributing, please under
 
 ```bash
 # Clone the repository
-git clone https://github.com/kiebor81/quby.git
-cd quby
+git clone https://github.com/kiebor81/QueryKit.git
+cd QueryKit
 
 # Install dependencies
 bundle install
@@ -33,7 +33,7 @@ open coverage/index.html
 
 ```
 lib/
-  quby/
+  QueryKit/
     adapters/          # Database adapters (SQLite, PostgreSQL, MySQL)
     extensions/        # Optional extensions (e.g., case_when.rb)
     query.rb           # SELECT query builder
@@ -43,7 +43,7 @@ lib/
     connection.rb      # Database connection and execution
     repository.rb      # Repository pattern base class
     configuration.rb   # Global configuration
-  quby.rb              # Main entry point
+  QueryKit.rb              # Main entry point
 
 test/                  # Minitest suite
 docs/                  # Documentation
@@ -65,7 +65,7 @@ Open an issue with:
 
 Before proposing a feature, consider:
 
-1. **Does it fit Quby's philosophy?** We prioritize simplicity over features.
+1. **Does it fit QueryKit's philosophy?** We prioritize simplicity over features.
 2. **Can it be an extension?** New features should be opt-in when possible.
 3. **Is there a real use case?** Avoid hypothetical "nice to have" features.
 4. **What's the maintenance cost?** More code = more to maintain.
@@ -116,7 +116,7 @@ Open an issue to discuss before implementing large features.
 ```ruby
 # frozen_string_literal: true
 
-module Quby
+module QueryKit
   class Example
     def process(data)
       return nil if data.nil?
@@ -194,8 +194,8 @@ open coverage/index.html
 
 Extensions should:
 
-1. **Live in `lib/quby/extensions/`**
-2. **Be opt-in via `Quby.use_extensions()`**
+1. **Live in `lib/QueryKit/extensions/`**
+2. **Be opt-in via `QueryKit.use_extensions()`**
 3. **Use `prepend` to override Query methods**
 4. **Have comprehensive tests**
 5. **Have dedicated documentation**
@@ -205,7 +205,7 @@ Extensions should:
 ```ruby
 # frozen_string_literal: true
 
-module Quby
+module QueryKit
   module MyExtension
     # Override or add methods to Query
     def my_new_method(*args)
@@ -225,9 +225,9 @@ end
 ### Usage
 
 ```ruby
-require 'quby/extensions/my_extension'
+require 'QueryKit/extensions/my_extension'
 
-Quby.use_extensions(Quby::MyExtension)
+QueryKit.use_extensions(QueryKit::MyExtension)
 
 # Now available on all queries
 db.query('users').my_new_method

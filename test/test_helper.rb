@@ -5,12 +5,12 @@ require 'simplecov'
 SimpleCov.start do
   add_filter '/test/'
   add_filter '/examples/'
-  add_group 'Core', 'lib/quby.rb'
-  add_group 'Query Builders', 'lib/quby/*_query.rb'
-  add_group 'Connection', 'lib/quby/connection.rb'
-  add_group 'Repository', 'lib/quby/repository.rb'
-  add_group 'Configuration', 'lib/quby/configuration.rb'
-  add_group 'Adapters', 'lib/quby/adapters'
+  add_group 'Core', 'lib/QueryKit.rb'
+  add_group 'Query Builders', 'lib/QueryKit/*_query.rb'
+  add_group 'Connection', 'lib/QueryKit/connection.rb'
+  add_group 'Repository', 'lib/QueryKit/repository.rb'
+  add_group 'Configuration', 'lib/QueryKit/configuration.rb'
+  add_group 'Adapters', 'lib/QueryKit/adapters'
 end
 
 $LOAD_PATH.unshift File.expand_path('../lib', __dir__)

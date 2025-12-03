@@ -1,4 +1,4 @@
-# Getting Started with Quby
+# Getting Started with QueryKit
 
 ## Installation
 
@@ -25,7 +25,7 @@ gem install querykit
 Configure once at application startup:
 
 ```ruby
-require_relative 'lib/quby'
+require_relative 'lib/QueryKit'
 
 # Block style
 QueryKit.configure do |config|
