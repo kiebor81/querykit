@@ -1,5 +1,11 @@
 ﻿# QueryKit 
 
+[![RubyMine](https://www.elegantobjects.org/rubymine.svg)](https://www.jetbrains.com/ruby/)
+
+[![Gem Version](https://badge.fury.io/rb/querykit.svg)](https://badge.fury.io/rb/querykit)
+[![Documentation](https://img.shields.io/badge/docs-rubydoc.info-blue.svg)](https://www.rubydoc.info/gems/querykit)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+
 A fluent, intuitive query builder and micro-ORM for Ruby inspired by .NET''s SqlKata. Perfect for projects where Active Record feels like overkill.
 
 ## Features
