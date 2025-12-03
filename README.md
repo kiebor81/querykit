@@ -1,6 +1,6 @@
 ﻿# Quby 
 
-A fluent, intuitive query builder for Ruby inspired by .NET''s SqlKata. Perfect for projects where Active Record feels like overkill.
+A fluent, intuitive query builder and micro-ORM for Ruby inspired by .NET''s SqlKata. Perfect for projects where Active Record feels like overkill.
 
 ## Features
 
