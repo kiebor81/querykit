@@ -42,7 +42,7 @@ gem install mysql2
 See [`demo.rb`](examples/demo.rb) for more extensive examples.
 
 ```ruby
-require_relative 'querykit'
+require 'querykit'
 
 # Configure once
 QueryKit.setup(:sqlite, database: 'app.db')

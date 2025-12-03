@@ -25,7 +25,7 @@ gem install querykit
 Configure once at application startup:
 
 ```ruby
-require_relative 'lib/QueryKit'
+require 'querykit'
 
 # Block style
 QueryKit.configure do |config|
