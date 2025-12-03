@@ -10,7 +10,13 @@ gem install pg           # For PostgreSQL
 gem install mysql2       # For MySQL
 ```
 
-Copy the `lib/quby` folder to your project.
+Install the gem.
+
+```bash
+
+gem install querykit
+
+```
 
 ## Configuration
 
